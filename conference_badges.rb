@@ -19,3 +19,18 @@ def assign_rooms(name_array)
   end
   return array_rm_msg
 end
+
+def printer(name_array)
+  output_badge_array = batch_badge_creator(name_array)
+  output_rooms_array = assign_rooms(name_array)
+  
+  output_badge_array.each do |list1|
+    puts "#{list1}"
+  end
+  
+  output_rooms_array.each do |list2|
+     puts "#{list2}"
+  end
+  
+  
+end #printer
