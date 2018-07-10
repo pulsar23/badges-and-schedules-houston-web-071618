@@ -15,7 +15,7 @@ def assign_rooms(name_array)
   array_rm_msg = []
   x = (1..7).to_a 
   name_array.each_with_index do |name, idx|
-    array_rm_msg = "Hello, #{name}! You'll be assigned to room #{x[idx]}!"
+    array_rm_msg = "Hello, #{name}! You'll be assigned to room #{idx+1}!"
   end
   return array_rm_msg
 end
